@@ -1,0 +1,26 @@
+.main-container-gallery {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 92px);
+
+
+}
+
+.gallery-context {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 92px);
+}
+
+.main-container-gallery img {
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}

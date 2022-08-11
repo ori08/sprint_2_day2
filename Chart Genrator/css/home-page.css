@@ -1,0 +1,56 @@
+.main-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 92px);
+    width: 100vw;
+    gap: 30px;
+}
+
+.main-container .circle {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/circles.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.main-container .rect {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/rect.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    color: rgb(245, 103, 68);
+}
+
+.main-container .diagram {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/diagram.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+    color: rgb(245, 103, 68);
+}

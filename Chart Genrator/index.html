@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home-page.css">
+    <link rel="stylesheet" href="/css/editor.css">
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="/css/user-gallery.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+
+
+
+    <title>Chart Generator</title>
+</head>
+
+<body onload="init()">
+
+    <div class="header-Conatiner">
+        <div class="main-layout">
+            <div class="logo">
+                <h1>Chart Generator</h1>
+            </div>
+            <div class="nav-bar">
+                <a class="nav-link" href="#" onclick="openHomePage()">Home</a>
+                <a class="nav-link" href="#" onclick="openGallery()">Gallery</a>
+                <a class="nav-link" href="#" onclick="openGraphGallery()">My-Chart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="circle" onclick="openEditor('circle')">
+        </div>
+        <div class="rect" onclick="openEditor('rect')">
+        </div>
+        <div class="diagram" onclick="openEditor('diagram')">
+        </div>
+    </div>
+
+    <div class="main-container-gallery">
+        <div class="gallry main-layout flex-colum">
+            <p>Common search word : sport ,politician, food , coins</p>
+            <input type="text" onkeyup=" onSearch(this)" data-trans="Search" placeholder="Search..">
+        </div>
+        <div class="gallery-context">
+        </div>
+    </div>
+
+    <div class="main-container-editor">
+        <div class="main-layout">
+            <div class="left-side-conatiner">
+                <div class="left-side">
+                    <canvas class="left-side" id="canvas" height="320" width="426"></canvas>
+                </div>
+            </div>
+            <div class="right-side-container">
+                <button class="exit-editor" onclick="closeEditor() ">x</button>
+                <div class="right-side">
+                    <input class="title" type="text" onkeyup=" onAddTitle(this)" data-trans="Search"
+                        placeholder="Title">
+                    <div class="tool-conatiner">
+                        <button class="btn-save" onclick="saveGraph()"></button>
+                        <button class="btn-download"><a href="#" onclick="downloadGraph(this)" download="my-imsg.jpg">
+                                <img class="btn-download" src="/img/download.png" alt=""></a></button>
+                        <button class="presn-btn" onclick="showPrcentage()"></button>
+                        <button class="numb-btn" onclick="showNumbers()"></button>
+
+                        <!-- <input type="file" class="file-input btn" name="image" onchange="onImgInput(event)"> -->
+
+
+                    </div>
+                    <div class="terms">
+                    </div>
+                </div>
+                <p>.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-graph-container">
+
+
+    </div>
+
+
+    <script src="js/chart-services.js"></script>
+    <script src="js/gallery-services.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/canvas-controler.js"></script>
+    <script src="js/view-controler.js"></script>
+    <script src="js/upload-service.js"></script>
+    <script src="js/mause-listenrs.js"></script>
+    <script src="js/main-controler.js"></script>
+
+</body>
+
+</html>

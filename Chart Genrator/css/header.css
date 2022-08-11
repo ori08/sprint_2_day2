@@ -1,0 +1,20 @@
+.header-Conatiner {
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+}
+
+.nav-bar {
+    display: flex;
+
+}
+
+.nav-bar .nav-link {
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+}
